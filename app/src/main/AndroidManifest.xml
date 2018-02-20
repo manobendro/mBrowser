@@ -20,7 +20,9 @@
             </intent-filter
             -->
         </activity>
-        <activity android:name=".VectorAnimationActivity">
+        <activity
+            android:name=".VectorAnimationActivity"
+            android:theme="@style/AppTheme.FullScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

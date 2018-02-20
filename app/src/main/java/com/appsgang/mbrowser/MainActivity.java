@@ -1,5 +1,6 @@
 package com.appsgang.mbrowser;
 
+import android.net.UrlQuerySanitizer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -13,11 +14,12 @@ import android.widget.ProgressBar;
 public class MainActivity extends AppCompatActivity implements MBWebInterface{
 
 
+    public static String TAG = "manob";
+    UrlQuerySanitizer sanitizer = new UrlQuerySanitizer();
     private WebView my_web_view;
     private WebSettings my_web_setting;
     private ProgressBar webViewProgress;
     private MBWebViewClient mbWebViewClient;
-    public static String TAG = "manob";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
